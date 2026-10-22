@@ -1,0 +1,3943 @@
+{
+  "schemaVersion": 3.0,
+  "appVersion": "9.3.3",
+  "config": {
+    "appName": "CUSTOM BY TIER 1",
+    "author": "Mato",
+    "comment": "T1 cfg",
+    "minTimeUnit": 1,
+    "description": "Main"
+  },
+  "devices": {
+    "groups": [
+      {
+        "id": 1,
+        "name": "keyboard"
+      },
+      {
+        "id": 2,
+        "name": "mouse"
+      }
+    ],
+    "hardware": [
+      {
+        "id": 1,
+        "name": "gamepad",
+        "keyboard": {
+          "config": {
+            "repeatMode": "fixed",
+            "repeatValue": 10
+          }
+        },
+        "mouse": {
+          "config": {
+            "sensitivity": 100,
+            "deflection": 1,
+            "acceleration": 0,
+            "wheelDeflection": 16
+          }
+        },
+        "default": {
+          "sticks": [
+            {
+              "name": "left",
+              "zones": [
+                {
+                  "name": "low",
+                  "x": 11599
+                }
+              ],
+              "sensitivity": {
+                "x": 29394,
+                "y": 28844
+              }
+            }
+          ]
+        },
+        "convertToVirtual": true
+      },
+      {
+        "groupId": 1,
+        "id": 11,
+        "name": "keyboard",
+        "keyboard": {
+          "config": {
+            "repeatMode": "fixed",
+            "repeatValue": 10
+          }
+        },
+        "mouse": {
+          "config": {
+            "sensitivity": 100,
+            "deflection": 1,
+            "acceleration": 0,
+            "wheelDeflection": 16
+          }
+        },
+        "type": "standard"
+      },
+      {
+        "groupId": 2,
+        "id": 23,
+        "name": "mouse",
+        "keyboard": {
+          "config": {
+            "repeatMode": "fixed",
+            "repeatValue": 10
+          }
+        },
+        "mouse": {
+          "config": {
+            "sensitivity": 100,
+            "deflection": 1,
+            "acceleration": 0,
+            "wheelDeflection": 16
+          }
+        }
+      },
+      {
+        "groupId": 2,
+        "id": 22,
+        "name": "mouse",
+        "keyboard": {
+          "config": {
+            "repeatMode": "fixed",
+            "repeatValue": 10
+          }
+        },
+        "mouse": {
+          "config": {
+            "sensitivity": 100,
+            "deflection": 1,
+            "acceleration": 0,
+            "wheelDeflection": 16
+          }
+        },
+        "default": {
+          "stick": {
+            "zones": [
+              {
+                "name": "high",
+                "x": 32768
+              }
+            ],
+            "curves": {
+              "points": {
+                "horizontal": [
+                  {
+                    "id": 1,
+                    "value": 7208,
+                    "travel": 1744
+                  },
+                  {
+                    "id": 2,
+                    "value": 14745,
+                    "travel": 6478
+                  },
+                  {
+                    "id": 3,
+                    "value": 21626,
+                    "travel": 13829
+                  },
+                  {
+                    "id": 4,
+                    "value": 26542,
+                    "travel": 21305
+                  }
+                ],
+                "vertical": [
+                  {
+                    "id": 1,
+                    "value": 7208,
+                    "travel": 1744
+                  },
+                  {
+                    "id": 2,
+                    "value": 14745,
+                    "travel": 6478
+                  },
+                  {
+                    "id": 3,
+                    "value": 21626,
+                    "travel": 13829
+                  },
+                  {
+                    "id": 4,
+                    "value": 26542,
+                    "travel": 21305
+                  }
+                ]
+              }
+            },
+            "smoothing": 9,
+            "noiseFilter": 1,
+            "scaleFactorX": 924
+          }
+        },
+        "shifts": [
+          {
+            "shiftId": 2,
+            "stick": {
+              "zones": [
+                {
+                  "name": "low",
+                  "x": 0
+                },
+                {
+                  "name": "high",
+                  "x": 32768
+                }
+              ],
+              "curves": {
+                "points": {
+                  "horizontal": [
+                    {
+                      "id": 1,
+                      "value": 7208,
+                      "travel": 1744
+                    },
+                    {
+                      "id": 2,
+                      "value": 14745,
+                      "travel": 6478
+                    },
+                    {
+                      "id": 3,
+                      "value": 21626,
+                      "travel": 13829
+                    },
+                    {
+                      "id": 4,
+                      "value": 26542,
+                      "travel": 21305
+                    }
+                  ],
+                  "vertical": [
+                    {
+                      "id": 1,
+                      "value": 7208,
+                      "travel": 1744
+                    },
+                    {
+                      "id": 2,
+                      "value": 14745,
+                      "travel": 6478
+                    },
+                    {
+                      "id": 3,
+                      "value": 21626,
+                      "travel": 13829
+                    },
+                    {
+                      "id": 4,
+                      "value": 26542,
+                      "travel": 21305
+                    }
+                  ]
+                }
+              },
+              "smoothing": 1,
+              "noiseFilter": 1,
+              "scaleFactorX": 509
+            }
+          }
+        ]
+      }
+    ],
+    "virtual": {
+      "gamepads": [
+        {
+          "id": 1,
+          "type": "ds4",
+          "performance": "ultra",
+          "default": {
+            "sticks": [
+              {
+                "name": "left",
+                "acceleration": 4,
+                "initialDeflection": 100,
+                "initialSpeed": 16
+              },
+              {
+                "name": "right",
+                "acceleration": 4,
+                "initialDeflection": 961,
+                "maxDeflection": 32767,
+                "initialSpeed": 16
+              }
+            ]
+          },
+          "shifts": [
+            {
+              "shiftId": 1,
+              "sticks": [
+                {
+                  "name": "right",
+                  "initialDeflection": 100,
+                  "maxDeflection": 32767
+                }
+              ]
+            },
+            {
+              "shiftId": 2,
+              "sticks": [
+                {
+                  "name": "left",
+                  "acceleration": 4,
+                  "initialDeflection": 100,
+                  "initialSpeed": 16
+                },
+                {
+                  "name": "right",
+                  "initialDeflection": 961,
+                  "maxDeflection": 32767,
+                  "initialSpeed": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "radialMenuCircles": [
+    {
+      "id": 1,
+      "sectors": [
+        1,
+        2,
+        3
+      ],
+      "tintBackground": 12,
+      "scale": 57,
+      "isDelayBeforeOpening": true,
+      "delayBeforeOpening": 211,
+      "delayControlsReleaseTimeout": 500
+    }
+  ],
+  "radialMenuSectors": [
+    {
+      "parentCircleId": 1,
+      "id": 1,
+      "icon": {
+        "type": "standard",
+        "resource": "IconSelector_Pistol"
+      }
+    },
+    {
+      "parentCircleId": 1,
+      "id": 2
+    },
+    {
+      "parentCircleId": 1,
+      "id": 3
+    }
+  ],
+  "shifts": [
+    {
+      "id": 1,
+      "type": "default",
+      "description": "Native",
+      "unheritableMasks": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": 2,
+      "type": "default",
+      "description": "ADS"
+    },
+    {
+      "id": 3,
+      "type": "radialMenu",
+      "description": "NVM"
+    }
+  ],
+  "masks": [
+    {
+      "id": 1,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 1,
+          "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 2,
+          "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 3,
+          "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 4,
+          "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 6,
+          "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 9,
+          "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 10,
+          "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 33,
+          "description": "DpadUp"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 34,
+          "description": "DpadDown"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 35,
+          "description": "DpadLeft"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 36,
+          "description": "DpadRight"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 40,
+          "description": "LeftStickUp"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 41,
+          "description": "LeftStickDown"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 42,
+          "description": "LeftStickLeft"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 43,
+          "description": "LeftStickRight"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 47,
+          "description": "RightStickUp"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 48,
+          "description": "RightStickDown"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 49,
+          "description": "RightStickLeft"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 50,
+          "description": "RightStickRight"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 51,
+          "description": "BtnLeftTrigger"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 55,
+          "description": "BtnRightTrigger"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4 / GameSirG7: M2"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3 / GameSirG7: M1"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "set": [
+        {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus / Flydigi: M1"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 10,
+          "description": "DIK_9"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 17,
+          "description": "DIK_W"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 30,
+          "description": "DIK_A"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 31,
+          "description": "DIK_S"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "set": [
+        {
+          "deviceId": 11,
+          "buttonId": 32,
+          "description": "DIK_D"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 1,
+          "description": "MOUSE_BTN_1"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 2,
+          "description": "MOUSE_BTN_2"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 3,
+          "description": "MOUSE_BTN_3"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 5,
+          "description": "MOUSE_BTN_5"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 64,
+          "description": "MouseStickUp"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 65,
+          "description": "MouseStickDown"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 66,
+          "description": "MouseStickLeft"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 67,
+          "description": "MouseStickRight"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "set": [
+        {
+          "deviceId": 23,
+          "buttonId": 171,
+          "description": "Mouse scroll up"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "radialMenuSet": [
+        {
+          "circleId": 1,
+          "sectorId": 1
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "description": "Close window",
+      "condition": {
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "down"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll down",
+      "condition": {
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "turbo"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 15,
+            "description": "DIK_TAB",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 15,
+            "description": "DIK_TAB",
+            "action": "up"
+          }
+        },
+        {
+          "pause": {
+            "value": 10000
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll up",
+      "condition": {
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 62,
+            "description": "DIK_F4",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 62,
+            "description": "DIK_F4",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Task switcher",
+      "condition": {
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "RMB",
+      "condition": {
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "buttonId": 2
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "buttonId": 1
+          }
+        }
+      ]
+    },
+    {
+      "description": "Open Task manager",
+      "condition": {
+        "mask": {
+          "id": 7,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Minimize all windows",
+      "condition": {
+        "mask": {
+          "id": 8,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 219,
+            "description": "DIK_LWIN"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cancel / Back",
+      "condition": {
+        "mask": {
+          "id": 9,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Choose / Accept",
+      "condition": {
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 28,
+            "description": "DIK_RETURN"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Press me!",
+      "condition": {
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true,
+              "delay": 30
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 17,
+            "description": "DIK_W",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 17,
+            "description": "DIK_W",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 30,
+            "description": "DIK_A",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 30,
+            "description": "DIK_A",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 6,
+            "description": "DIK_5",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 6,
+            "description": "DIK_5",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 52,
+            "description": "DIK_PERIOD",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 52,
+            "description": "DIK_PERIOD",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 11,
+            "description": "DIK_0",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 11,
+            "description": "DIK_0",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 22,
+            "description": "DIK_U",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 22,
+            "description": "DIK_U",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 2,
+            "description": "DIK_1",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 2,
+            "description": "DIK_1",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 81,
+            "description": "DIK_NUMPAD3",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 81,
+            "description": "DIK_NUMPAD3",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Copy",
+      "condition": {
+        "mask": {
+          "id": 12,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 46,
+            "description": "DIK_C"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Paste",
+      "condition": {
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 47,
+            "description": "DIK_V"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cancel",
+      "condition": {
+        "mask": {
+          "id": 14,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 44,
+            "description": "DIK_Z"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cut",
+      "condition": {
+        "mask": {
+          "id": 15,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 45,
+            "description": "DIK_X"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 16,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 200,
+            "description": "DIK_UP"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 17,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 208,
+            "description": "DIK_DOWN"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 18,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 203,
+            "description": "DIK_LEFT"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 19,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 205,
+            "description": "DIK_RIGHT"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 20,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "down"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 21,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 22,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "left"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 23,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "right"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll Down",
+      "condition": {
+        "mask": {
+          "id": 24,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "down"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll Up",
+      "condition": {
+        "mask": {
+          "id": 25,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Close window",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 1,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "down"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll down",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 2,
+          "activator": {
+            "type": "single",
+            "mode": "turbo"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 15,
+            "description": "DIK_TAB",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 15,
+            "description": "DIK_TAB",
+            "action": "up"
+          }
+        },
+        {
+          "pause": {
+            "value": 10000
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll up",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 3,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 62,
+            "description": "DIK_F4",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 62,
+            "description": "DIK_F4",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Task switcher",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 4,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "RMB",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 5,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "buttonId": 2
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 6,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "buttonId": 1
+          }
+        }
+      ]
+    },
+    {
+      "description": "Open Task manager",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 7,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Minimize all windows",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 8,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 219,
+            "description": "DIK_LWIN"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cancel / Back",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 9,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 1,
+            "description": "DIK_ESCAPE"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Choose / Accept",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 10,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 28,
+            "description": "DIK_RETURN"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Press me!",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 11,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true,
+              "delay": 30
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 17,
+            "description": "DIK_W",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 17,
+            "description": "DIK_W",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 30,
+            "description": "DIK_A",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 30,
+            "description": "DIK_A",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 6,
+            "description": "DIK_5",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 6,
+            "description": "DIK_5",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 52,
+            "description": "DIK_PERIOD",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 52,
+            "description": "DIK_PERIOD",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 11,
+            "description": "DIK_0",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 11,
+            "description": "DIK_0",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 19,
+            "description": "DIK_R",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 22,
+            "description": "DIK_U",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 22,
+            "description": "DIK_U",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 38,
+            "description": "DIK_L",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 18,
+            "description": "DIK_E",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 2,
+            "description": "DIK_1",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 42,
+            "description": "DIK_LSHIFT",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 2,
+            "description": "DIK_1",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 57,
+            "description": "DIK_SPACE",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 81,
+            "description": "DIK_NUMPAD3",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 81,
+            "description": "DIK_NUMPAD3",
+            "action": "up"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 56,
+            "description": "DIK_LMENU",
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Copy",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 12,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 46,
+            "description": "DIK_C"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Paste",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 13,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 47,
+            "description": "DIK_V"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cancel",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 14,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 44,
+            "description": "DIK_Z"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Cut",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 15,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 29,
+            "description": "DIK_LCONTROL"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 45,
+            "description": "DIK_X"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 16,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 200,
+            "description": "DIK_UP"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 17,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 208,
+            "description": "DIK_DOWN"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 18,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 203,
+            "description": "DIK_LEFT"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 19,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 205,
+            "description": "DIK_RIGHT"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 20,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "down"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 21,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 22,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "left"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 23,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "direction": "right"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll Down",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 24,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "down"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Scroll Up",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 25,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "mouse": {
+            "wheel": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 1,
+          "description": "XB, Stadia: A / DS4: Cross / Nintendo: B"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 2,
+          "description": "XB, Stadia: B / DS4: Circle / Nintendo: A"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 3,
+          "description": "XB, Stadia: X / DS4: Square / Nintendo: Y"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 4,
+          "description": "XB, Stadia: Y / DS4: Triangle / Nintendo: X"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 5,
+          "description": "XB: LeftShoulder / DS4, Stadia: L1 / Nintendo: L"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 6,
+          "description": "XB: RightShoulder / DS4, Stadia: R1 / Nintendo: R"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 7,
+          "description": "XB: View / XB360: Back / DS4: Share / Nintendo: Minus / DS3: Select / Stadia: Options / NvidiaShield: Back / SNES: Select"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 8,
+          "description": "XB, Stadia: Menu / XB360: Start / DS4: Options / Nintendo: Plus / DS3: Start / NvidiaShield: Start / SNES: Start"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 9,
+          "description": "XB, Nintendo: LeftStick / DS4, Stadia: L3"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 10,
+          "description": "XB, Nintendo: RightStick / DS4, Stadia: R3"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 29,
+          "description": "XB: LeftUpperPaddle / JoyCon: Left SL / Flydigi: M4 / GameSirG7: M2"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 30,
+          "description": "XB: RightUpperPaddle / JoyCon: Right SR / Flydigi: M3 / GameSirG7: M1"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 31,
+          "description": "XB, Steam: LeftLowerPaddle / JoyCon: Left SR / NvidiaShield: Minus / Flydigi: M2"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 32,
+          "description": "XB, Steam: RightLowerPaddle / JoyCon: Right SL / NvidiaShield: Plus / Flydigi: M1"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 33,
+          "description": "DpadUp"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 34,
+          "description": "DpadDown"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 35,
+          "description": "DpadLeft"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 36,
+          "description": "DpadRight"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 51,
+          "description": "BtnLeftTrigger"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 55,
+          "description": "BtnRightTrigger"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "stick": "left",
+          "axis": "x"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "stick": "left",
+          "axis": "y"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "stick": "right",
+          "axis": "x"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 1,
+          "stick": "right",
+          "axis": "y"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "hardware": {
+          "deviceId": 1,
+          "buttonId": 11,
+          "description": "XB, Nintendo, Flydigi: Home / DS4: PS / Stadia: Stadia / NvidiaShield: Nvidia"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "description": "TOGGLE BIND",
+      "condition": {
+        "mask": {
+          "id": 30,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "jumpToLayer": {
+        "layer": 1
+      }
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 31,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 40,
+            "description": "LeftStickUp",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 32,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 42,
+            "description": "LeftStickLeft",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 33,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 41,
+            "description": "LeftStickDown",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 34,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 43,
+            "description": "LeftStickRight",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "description": "TOGGLE BIND",
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 30,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "jumpToLayer": {
+        "layer": 0
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 31,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 17,
+            "description": "DIK_W"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 32,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 30,
+            "description": "DIK_A"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 33,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 31,
+            "description": "DIK_S"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 34,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 32,
+            "description": "DIK_D"
+          }
+        }
+      ]
+    },
+    {
+      "description": "TURN ON / TURN OFF",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 30,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "jumpToLayer": {
+        "layer": 1
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 31,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 40,
+            "description": "LeftStickUp",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 32,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 42,
+            "description": "LeftStickLeft",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 33,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 41,
+            "description": "LeftStickDown",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 34,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 43,
+            "description": "LeftStickRight",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 10,
+          "description": "DIK_9"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 17,
+          "description": "DIK_W"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 31,
+          "description": "DIK_S"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 10,
+          "description": "DIK_9"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 17,
+          "description": "DIK_W"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 30,
+          "description": "DIK_A"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 31,
+          "description": "DIK_S"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 1,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 32,
+          "description": "DIK_D"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 17,
+          "description": "DIK_W"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "hardware": {
+          "deviceId": 11,
+          "buttonId": 31,
+          "description": "DIK_S"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 35,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 55,
+            "description": "BtnRightTrigger"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 36,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "jumpToLayer": {
+        "layer": 2
+      }
+    },
+    {
+      "description": "Redo",
+      "condition": {
+        "mask": {
+          "id": 37,
+          "activator": {
+            "type": "long",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Copy",
+      "condition": {
+        "mask": {
+          "id": 37,
+          "activator": {
+            "type": "double",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "NEW AIM ASSIST",
+      "condition": {
+        "mask": {
+          "id": 38,
+          "activator": {
+            "type": "single",
+            "mode": "onetime"
+          }
+        }
+      }
+    },
+    {
+      "description": "\u9632\u6B7B\u533A\u66F2\u7EBF",
+      "condition": {
+        "mask": {
+          "id": 39,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 40,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 48,
+            "description": "RightStickDown",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 41,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 49,
+            "description": "RightStickLeft",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 42,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "mask": {
+          "id": 43,
+          "activator": {
+            "type": "single",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "keyboard": {
+            "buttonId": 34,
+            "description": "DIK_G",
+            "action": "down"
+          }
+        },
+        {
+          "keyboard": {
+            "buttonId": 34,
+            "description": "DIK_G",
+            "action": "up"
+          }
+        },
+        {
+          "mouse": {
+            "buttonId": 1,
+            "action": "down"
+          }
+        },
+        {
+          "mouse": {
+            "buttonId": 1,
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 23,
+          "buttonId": 171,
+          "description": "Mouse scroll up"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 23,
+          "stick": "mouse",
+          "axis": "x"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "hardware": {
+          "deviceId": 23,
+          "stick": "mouse",
+          "axis": "y"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "description": "Controller Activator",
+      "condition": {
+        "shiftId": 1,
+        "mask": {
+          "id": 37,
+          "activator": {
+            "type": "single",
+            "mode": "onetime"
+          }
+        }
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 35,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release",
+            "params": {
+              "macro": true
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 48,
+            "description": "RightStickDown",
+            "absolute": false,
+            "value": 2949
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 36,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 51,
+            "description": "BtnLeftTrigger"
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 36,
+          "activator": {
+            "type": "release",
+            "mode": "onetime",
+            "params": {
+              "expert": true
+            }
+          }
+        }
+      },
+      "jumpToLayer": {
+        "layer": 0
+      }
+    },
+    {
+      "description": "NEW AIM ASSIST",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 38,
+          "activator": {
+            "type": "single",
+            "mode": "onetime"
+          }
+        }
+      }
+    },
+    {
+      "description": "\u9632\u6B7B\u533A\u66F2\u7EBF",
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 39,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 40,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 48,
+            "description": "RightStickDown",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 41,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 49,
+            "description": "RightStickLeft",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "mask": {
+          "id": 42,
+          "activator": {
+            "type": "single",
+            "mode": "hold_until_release"
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 32767
+          }
+        }
+      ]
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "hardware": {
+          "deviceId": 23,
+          "stick": "mouse",
+          "axis": "x"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 2,
+        "hardware": {
+          "deviceId": 23,
+          "stick": "mouse",
+          "axis": "y"
+        }
+      },
+      "hardware": {
+        "unmap": true
+      }
+    },
+    {
+      "condition": {
+        "shiftId": 3,
+        "mask": {
+          "id": 44,
+          "activator": {
+            "type": "single",
+            "mode": "toggle",
+            "params": {
+              "delay": 1
+            }
+          }
+        }
+      },
+      "macros": [
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 9830
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 0
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 0
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 48,
+            "description": "RightStickDown",
+            "absolute": true,
+            "value": 9830
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 49,
+            "description": "RightStickLeft",
+            "absolute": true,
+            "value": 9830
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 0
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 50,
+            "description": "RightStickRight",
+            "absolute": true,
+            "value": 0
+          }
+        },
+        {
+          "gamepad": {
+            "id": 1,
+            "buttonId": 47,
+            "description": "RightStickUp",
+            "absolute": true,
+            "value": 9830
+          }
+        }
+      ]
+    }
+  ]
+}
